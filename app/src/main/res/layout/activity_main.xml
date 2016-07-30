@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/my_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="My Nanodegree Apps!"
+        android:textSize="24sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/app_movies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Popular Movies"
+        android:layout_below="@+id/my_title"
+        android:onClick="sendMovies"
+        android:layout_alignRight="@+id/my_title"
+        android:layout_alignEnd="@+id/my_title"
+        android:layout_alignLeft="@+id/my_title"
+        android:layout_alignStart="@+id/my_title"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stock Hawk"
+        android:id="@+id/app_stock"
+        android:layout_below="@+id/app_movies"
+        android:layout_alignLeft="@+id/app_movies"
+        android:layout_alignStart="@+id/app_movies"
+        android:layout_alignRight="@+id/app_movies"
+        android:layout_alignEnd="@+id/app_movies"
+        android:onClick="sendHawk" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Build it Bigger"
+        android:id="@+id/app_bib"
+        android:layout_below="@+id/app_stock"
+        android:layout_alignLeft="@+id/app_stock"
+        android:layout_alignStart="@+id/app_stock"
+        android:layout_alignRight="@+id/app_stock"
+        android:layout_alignEnd="@+id/app_stock"
+        android:onClick="sendBib" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Your App Material"
+        android:id="@+id/app_make"
+        android:layout_below="@+id/app_bib"
+        android:layout_alignLeft="@+id/app_bib"
+        android:layout_alignStart="@+id/app_bib"
+        android:layout_alignRight="@+id/app_bib"
+        android:layout_alignEnd="@+id/app_bib"
+        android:onClick="sendMakeApp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Ubiquitous"
+        android:id="@+id/app_ubiq"
+        android:layout_below="@+id/app_make"
+        android:layout_alignLeft="@+id/app_make"
+        android:layout_alignStart="@+id/app_make"
+        android:layout_alignRight="@+id/app_make"
+        android:layout_alignEnd="@+id/app_make"
+        android:onClick="sendUbiq" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capstone"
+        android:id="@+id/app_cap"
+        android:layout_below="@+id/app_ubiq"
+        android:layout_alignLeft="@+id/app_ubiq"
+        android:layout_alignStart="@+id/app_ubiq"
+        android:layout_alignRight="@+id/app_ubiq"
+        android:layout_alignEnd="@+id/app_ubiq"
+        android:onClick="sendCap" />
+
+</RelativeLayout>
